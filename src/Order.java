@@ -1,3 +1,5 @@
+import java.util.Set;
+
 public class Order {
         private String id;
         private float jpjg;//机票价格
@@ -7,7 +9,7 @@ public class Order {
         private float jpgtx;//机票改退险
         private float yhj;//优惠券
         private float hszj;//含税总价
-        private Customer customers[];//乘客人数
+        private Set<Customer> customers;//乘客人数
 
 
     public String getId() {
@@ -74,11 +76,11 @@ public class Order {
         this.hszj = hszj;
     }
 
-    public Customer[] getCustomers() {
+    public Set<Customer> getCustomers() {
         return customers;
     }
 
-    public void setCustomers(Customer[] customers) {
+    public void setCustomers(Set<Customer> customers) {
         this.customers = customers;
     }
 }
