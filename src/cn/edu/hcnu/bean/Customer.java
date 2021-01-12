@@ -1,3 +1,5 @@
+package cn.edu.hcnu.bean;
+
 public class Customer {
     private String id;
     private String name;//乘客姓名
