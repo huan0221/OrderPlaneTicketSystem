@@ -11,7 +11,8 @@ public class Flight {
     private String formtime;//起飞时间
 
 
-    public Flight(String flightId, String planetype, int dangqianSeatsNum, String form, String to, String formtime) {
+    public Flight(String id,String flightId, String planetype, int dangqianSeatsNum, String form, String to, String formtime) {
+        this.id=id;
         this.flightId = flightId;
         this.planetype = planetype;
         this.dangqianSeatsNum = dangqianSeatsNum;
@@ -81,12 +82,12 @@ public class Flight {
     @Override
     public String toString() {
         return "Flight{" +
-                "flightId='" + flightId + '\'' +
-                ", planetype='" + planetype + '\'' +
-                ", dangqianSeatsNum=" + dangqianSeatsNum +
-                ", form='" + form + '\'' +
-                ", to='" + to + '\'' +
-                ", formtime='" + formtime + '\'' +
+                "航班='" + flightId + '\'' +
+                ", 机型='" + planetype + '\'' +
+                ", 当前座位数=" + dangqianSeatsNum +
+                ", 起飞机场='" + form + '\'' +
+                ", 目的机场='" + to + '\'' +
+                ", 起飞时间='" + formtime + '\'' +
                 '}';
     }
 }
